@@ -1,0 +1,1 @@
+ad1ff649-9097-4f92-b457-d4f1602386f0 bucket=gftdcojp-m365-annex chunk=50MiB datacenter=US encryption=none fileprefix=gftd-audio-actor/ host=s3.us-west-004.backblazeb2.com name=b2 port=443 protocol=https signature=v4 storageclass=STANDARD type=S3 timestamp=1783854974s
