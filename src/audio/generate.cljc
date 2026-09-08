@@ -17,7 +17,7 @@
   index -> :sfx (from `sfx-gene-pool`). Every candidate now carries its own
   `:modality` key so downstream (audio.murakumo/submit!, audio.datalad)
   knows which murakumo function/asset stage it belongs to."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 (def music-gene-pool
   {:mood ["quiet travel theme" "bustling market ambience" "gentle mystery" "warm homecoming"]
