@@ -1,5 +1,5 @@
 (ns audio.aozora
-  "Real app-aozora Publisher for gftd-audio-actor — creates a record in the
+  "Real app-aozora Publisher for audio-actor — creates a record in the
   net.audio.asset.publish collection on an aozora PDS via
   com.atproto.repo.createRecord, authenticated by a depth-1 self-minted
   CACAO. 1:1 port of the PROVEN `cloud_itonami.media.aozora` (itself ported

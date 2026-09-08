@@ -1,5 +1,5 @@
 (ns audio.cacao
-  "Agent-side CACAO issuance (JVM) for gftd-audio-actor. 1:1 port of the
+  "Agent-side CACAO issuance (JVM) for audio-actor. 1:1 port of the
   PROVEN `cloud_itonami.media.cacao` (itself ported from `kawaraban.cacao` /
   `tashikame.cacao` / `kotoba.cacao`) — deliberately NOT built on
   `io.github.kotoba-lang/org-chainagnostic-cacao`, since this SIWE+CBOR
@@ -139,7 +139,7 @@
   (graph-cid-from-name (str "kotobase/db/" did "/" db-name)))
 
 (def default-db-name
-  "gftd-audio-actor's own database."
+  "audio-actor's own database."
   "audio")
 
 (defn generate-identity []

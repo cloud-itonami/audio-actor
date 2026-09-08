@@ -6,7 +6,7 @@
   the job-normalization / kotoba-queue wire protocol here.
 
   DUAL-MODALITY (unlike every sibling actor, which has one fixed
-  murakumo.edn `:fn/modality`): gftd-audio-actor covers BOTH `:music` and
+  murakumo.edn `:fn/modality`): audio-actor covers BOTH `:music` and
   `:sfx` — two separate `:apps :generation` function entries in
   murakumo.edn that happen to share the same `:fn/engine :audio`. So,
   unlike `illust.murakumo`'s single `(def modality :image)` +
@@ -27,7 +27,7 @@
             [cloud-murakumo.queue-kotoba :as qk])
   )
 
-(def actor-id "gftd-audio-actor")
+(def actor-id "audio-actor")
 
 (defn function
   "MODALITY (:music or :sfx) -> this actor's murakumo.edn `:apps
