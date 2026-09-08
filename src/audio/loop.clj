@@ -20,7 +20,7 @@
   queue — see audio.murakumo's docstring."
   (:require [clojure.java.io :as io]
             [clojure.edn :as edn]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [audio.persona :as persona]
             [audio.generate :as generate]
             [audio.murakumo :as murakumo]
@@ -123,7 +123,7 @@
 
       (murakumo/done? job)
       (let [bytes (murakumo/fetch-artifact! job)
-            fmt (some-> (first (:gen.job/artifacts job)) (str/split #"\.") last str/lower-case)]
+            fmt (some-> (first (:gen.job/artifacts job)) (str/split #"\.") last str/lower)]
         {:candidate candidate :status :done :artifact-bytes bytes
          :format fmt :expected-format expected-format
          :safety-flag (boolean (:gen.job/safety-flag job))})
