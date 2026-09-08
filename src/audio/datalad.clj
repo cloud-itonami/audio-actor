@@ -32,12 +32,12 @@
    :asset/kind kind
    :asset/format format
    :asset/title title
-   :asset/author "gftd-audio-actor"
+   :asset/author "audio-actor"
    :asset/license license
    :asset/tags (vec tags)
    :asset/source :gen
    :asset/gen {:stage (or modality :music) :job-key gen-job-id :prompt prompt
-               :provenance "murakumo/audio via gftd-audio-actor co-scientist loop"}
+               :provenance "murakumo/audio via audio-actor co-scientist loop"}
    ;; 下流（cloud-itonami-isco-2652 の受注 gate、sakkyokuka の作品台帳）が
    ;; **機械で読める** provenance。上の :asset/gen :provenance は人が読む散文で、
    ;; 「AI が作ったのか人が書いたのか」を問い合わせる側からは使えなかった。
