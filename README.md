@@ -77,7 +77,7 @@ model-id として書くのは嘘になる（関数 ID であってモデルで�
 ### Test
 
 ```bash
-clojure -M:test   # 30 tests / 59 assertions
+kbb -M:test   # 30 tests / 59 assertions
 ```
 
 **2026-08-07 まで、この suite は 1 度も走っていなかった。** `deps.edn` が
@@ -156,11 +156,11 @@ datalad push --to b2           # push new bytes after a local save
 ## Running
 
 ```sh
-clojure -M:run tick     # one durable-loop step (cron/launchd)
-clojure -M:run run      # stay resident, tick on an interval
-clojure -M:run status   # print ledger tail + loop state
-clojure -M:test         # offline, fully faked (no network) — see test/audio/loop_test.cljk
-clojure -M:lint         # clj-kondo, errors fail
+kbb -M:run tick     # one durable-loop step (cron/launchd)
+kbb -M:run run      # stay resident, tick on an interval
+kbb -M:run status   # print ledger tail + loop state
+kbb -M:test         # offline, fully faked (no network) — see test/audio/loop_test.cljk
+kbb -M:lint         # clj-kondo, errors fail
 ```
 
 Env: `ASSET_ACTOR_DAILY_BUDGET` (default 8 gen jobs/day),
