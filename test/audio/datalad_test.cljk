@@ -5,7 +5,7 @@
   sakkyokuka の作品台帳に流れる。そこが必要とするのは『AI が作ったのか人が
   書いたのか』を**機械で読める**形で、従来の `:asset/gen :provenance`
   （英語の散文 1 行）では答えられなかった。"
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [audio.datalad :as datalad]))
 
 (def ^:private base

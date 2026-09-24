@@ -1,5 +1,5 @@
 (ns audio.governor-test
-  (:require [clojure.test :refer [deftest testing is]]
+  (:require [kotoba.test :refer [deftest testing is]]
             [audio.governor :as governor]))
 
 (def clean-asset
