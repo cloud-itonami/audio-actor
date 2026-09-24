@@ -19,7 +19,7 @@
   murakumo fleet worker being up and consuming the `gftd-murakumo` kotoba
   queue — see audio.murakumo's docstring."
   (:require [clojure.java.io :as io]
-            [clojure.edn :as edn]
+            [kotoba.lang.edn :as edn]
             [kotoba.lang.text :as str]
             [audio.persona :as persona]
             [audio.generate :as generate]
