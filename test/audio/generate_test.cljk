@@ -1,5 +1,5 @@
 (ns audio.generate-test
-  (:require [clojure.test :refer [deftest testing is]]
+  (:require [kotoba.test :refer [deftest testing is]]
             [audio.generate :as generate]))
 
 (def persona {:tags ["network-isekai"]})
